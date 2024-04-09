@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kő Papír Olló</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Kő-Papír-Olló</h1>
+        <div class="lehetosegek">
+            <button onclick="playGame('kő')"><img src="ko.png" height="150" alt="kő"> </button>
+            <button onclick="playGame('papír')"><img src="papir.png" height="150" alt="papír"></button>
+            <button onclick="playGame('olló')"><img src="ollo.png" height="150" alt="olló"></button>
+        </div>
+        <div id="playerDisplay">
+            JÁTÉKOS: 
+        </div>
+        <div id="computerDisplay">
+            SZÁMÍTÓGÉP: 
+        </div>
+        <div id="resultDisplay"> </div>
+        <div class="scoreDisplay">Játékos győzelmeinek száma:
+            <span id="playerScoreDisplay">0</span>
+        </div>
+        <div class="scoreDisplay">Számítógép győzelmeinek száma:
+            <span id="computerScoreDisplay">0</span>
+        </div>
+        <div class="reset"><button onclick="resetScores()">Újraindítás</button></div>
+
+        <script src="index.js"></script>
+    </body>
+    <footer>
+        <div>Készítette: Horváth László Zoltán</div>
+    </footer>
+</html>
